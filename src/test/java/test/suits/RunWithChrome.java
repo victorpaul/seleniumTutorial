@@ -12,11 +12,11 @@ import test.homepage.HomePageWIthParticularBrowsersTest;
         HomePageTest.class,
         HomePageWIthParticularBrowsersTest.class
 })
-public class FireFoxSuit {
+public class RunWithChrome {
 
     @BeforeClass
     public static void methodBeforeClass() {
-        DriverSetUp.set("firefox");
+        DriverSetUp.set("chrome");
     }
 
 }
