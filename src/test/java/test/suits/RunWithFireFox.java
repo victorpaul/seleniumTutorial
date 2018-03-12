@@ -4,8 +4,8 @@ import org.junit.BeforeClass;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 import test.DriverSetUp;
-import test.homepage.HomePageTest;
-import test.homepage.HomePageWIthParticularBrowsersTest;
+import test.HomePageTest;
+import test.HomePageWIthParticularBrowsersTest;
 
 @RunWith(Suite.class)
 @Suite.SuiteClasses({

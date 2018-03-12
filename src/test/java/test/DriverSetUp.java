@@ -1,6 +1,5 @@
 package test;
 
-import org.junit.After;
 import org.junit.AfterClass;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -56,17 +55,11 @@ abstract public class DriverSetUp {
         return browser;
     }
 
-    private static void finish(WebDriver webDriver) {
-        if (webDriver != null) {
-            webDriver.quit();
-        }
-    }
-
     @AfterClass
     public static void finishBrowsers() {
-        finish(browser);
-        finish(chrome);
-        finish(firefox);
+        if (browser != null) browser.quit();
+        if (chrome != null) chrome.quit();
+        if (firefox != null) firefox.quit();
         browser = null;
         chrome = null;
         firefox = null;

@@ -1,4 +1,4 @@
-package test.homepage;
+package test;
 import org.junit.Test;
 import test.DriverSetUp;
 
